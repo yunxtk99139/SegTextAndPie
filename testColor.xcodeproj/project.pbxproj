@@ -18,6 +18,10 @@
 		FE3BB1621F3AB7F8005FBA9D /* testColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3BB1611F3AB7F8005FBA9D /* testColorTests.m */; };
 		FE3BB16D1F3AB7F8005FBA9D /* testColorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3BB16C1F3AB7F8005FBA9D /* testColorUITests.m */; };
 		FE41300D1F50242B003D010E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE41300C1F50242B003D010E /* TableViewController.m */; };
+		FE9745421F55505D007BED5B /* BarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9745411F55505D007BED5B /* BarChart.m */; };
+		FE9745451F55509B007BED5B /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9745441F55509B007BED5B /* BarView.m */; };
+		FE9745481F5557DB007BED5B /* BarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9745471F5557DB007BED5B /* BarChartData.m */; };
+		FE97454B1F555CAD007BED5B /* BarCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97454A1F555CAD007BED5B /* BarCtl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,14 @@
 		FE3BB16E1F3AB7F8005FBA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE41300B1F50242B003D010E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		FE41300C1F50242B003D010E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		FE9745401F55505D007BED5B /* BarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChart.h; sourceTree = "<group>"; };
+		FE9745411F55505D007BED5B /* BarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChart.m; sourceTree = "<group>"; };
+		FE9745431F55509B007BED5B /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
+		FE9745441F55509B007BED5B /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
+		FE9745461F5557DB007BED5B /* BarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartData.h; sourceTree = "<group>"; };
+		FE9745471F5557DB007BED5B /* BarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartData.m; sourceTree = "<group>"; };
+		FE9745491F555CAD007BED5B /* BarCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCtl.h; sourceTree = "<group>"; };
+		FE97454A1F555CAD007BED5B /* BarCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCtl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 		FE3BB1461F3AB7F8005FBA9D /* testColor */ = {
 			isa = PBXGroup;
 			children = (
+				FE97453D1F55503B007BED5B /* bar */,
 				FE3BB14A1F3AB7F8005FBA9D /* AppDelegate.h */,
 				FE3BB14B1F3AB7F8005FBA9D /* AppDelegate.m */,
 				FE41300B1F50242B003D010E /* TableViewController.h */,
@@ -118,6 +131,8 @@
 				FE055E8B1F5114D3004A65DA /* PieCtl.m */,
 				FE055E8D1F511503004A65DA /* PieView.h */,
 				FE055E8E1F511503004A65DA /* PieView.m */,
+				FE9745491F555CAD007BED5B /* BarCtl.h */,
+				FE97454A1F555CAD007BED5B /* BarCtl.m */,
 				FE3BB14D1F3AB7F8005FBA9D /* ViewController.h */,
 				FE3BB14E1F3AB7F8005FBA9D /* ViewController.m */,
 				FE3BB1501F3AB7F8005FBA9D /* Main.storyboard */,
@@ -153,6 +168,35 @@
 				FE3BB16E1F3AB7F8005FBA9D /* Info.plist */,
 			);
 			path = testColorUITests;
+			sourceTree = "<group>";
+		};
+		FE97453D1F55503B007BED5B /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				FE97453E1F55503B007BED5B /* models */,
+				FE97453F1F55503B007BED5B /* views */,
+				FE9745401F55505D007BED5B /* BarChart.h */,
+				FE9745411F55505D007BED5B /* BarChart.m */,
+			);
+			path = bar;
+			sourceTree = "<group>";
+		};
+		FE97453E1F55503B007BED5B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FE9745461F5557DB007BED5B /* BarChartData.h */,
+				FE9745471F5557DB007BED5B /* BarChartData.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FE97453F1F55503B007BED5B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FE9745431F55509B007BED5B /* BarView.h */,
+				FE9745441F55509B007BED5B /* BarView.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +336,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3BB14F1F3AB7F8005FBA9D /* ViewController.m in Sources */,
+				FE97454B1F555CAD007BED5B /* BarCtl.m in Sources */,
 				FE055E8C1F5114D3004A65DA /* PieCtl.m in Sources */,
 				FE3BB14C1F3AB7F8005FBA9D /* AppDelegate.m in Sources */,
 				FE055E8F1F511503004A65DA /* PieView.m in Sources */,
+				FE9745451F55509B007BED5B /* BarView.m in Sources */,
+				FE9745421F55505D007BED5B /* BarChart.m in Sources */,
+				FE9745481F5557DB007BED5B /* BarChartData.m in Sources */,
 				FE3BB1491F3AB7F8005FBA9D /* main.m in Sources */,
 				FE41300D1F50242B003D010E /* TableViewController.m in Sources */,
 			);
@@ -445,6 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25RW5R38K6;
 				INFOPLIST_FILE = testColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qibu.testColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 25RW5R38K6;
 				INFOPLIST_FILE = testColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qibu.testColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";

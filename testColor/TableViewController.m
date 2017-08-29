@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "ViewController.h"
 #import "PieCtl.h"
+#import "BarCtl.h"
 @interface TableViewController (){
     NSArray* _items;
 }
@@ -18,8 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _items = @[@"color1",@"pie"];
+    _items = @[@"color1",@"pie",@"bar"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    NSLog(@"test");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +46,9 @@
         [self.navigationController pushViewController:ctl animated:YES];
     }else if(indexPath.row == 1){
         PieCtl* ctl = [[PieCtl alloc] init];
+        [self.navigationController pushViewController:ctl animated:YES];
+    }else if(indexPath.row == 2){
+        BarCtl* ctl = [[BarCtl alloc] init];
         [self.navigationController pushViewController:ctl animated:YES];
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

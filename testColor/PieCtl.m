@@ -9,7 +9,9 @@
 
 #import "PieCtl.h"
 #import "PieView.h"
-@interface PieCtl ()
+@interface PieCtl (){
+    NSTimer* timer;
+}
 @property (nonatomic,strong) PieView *pView;
 @end
 
@@ -24,6 +26,8 @@
     _pView.fontSize = 18;
     _pView.padding = 15;
     [_pView strokeChart];
+    timer = [NSTimer timerWithTimeInterval:3 target:_pView selector:@selector(strokeChart) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
  
 }
 
